@@ -1,9 +1,9 @@
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI, Type } from "@google/genai";
 import { SYSTEM_INSTRUCTION, UNIT_DATE_EXTRACTION_INSTRUCTION, SMU_EXTRACTION_INSTRUCTION } from "../constants";
 import { DefectEntry, UnitDateEntry, SmuDocShiftEntry } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const cleanBase64 = (base64Data: string) => base64Data.split(',')[1] || base64Data;
 
