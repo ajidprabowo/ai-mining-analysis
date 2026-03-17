@@ -1,0 +1,5 @@
+{
+  "name": "AI Defect Analyst 3.1",
+  "description": "A specialized tool for extracting and categorizing vehicle defects from mining inspection reports using Gemini Vision. Automatically structure raw handwritten or printed logs into actionable JSON data.",
+  "requestFramePermissions": []
+}
